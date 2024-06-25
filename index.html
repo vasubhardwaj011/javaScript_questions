@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>This is to convert 1111222233334444 to 1111-2222-3333-4444</h2>
+    <p id="demo"></p>
+
+    <button onclick="myFunction()"> Click here to convert</button>
+
+
+
+    <script>
+        let text = "0001903110100046";
+        document.getElementById("demo").innerHTML = text;
+
+
+        function myFunction() {
+            let texta = text.slice(0, 4);
+            let textb = text.slice(4, 8);
+            let textc = text.slice(8, 12);
+            let textd = text.slice(12, 16);
+
+            let dashedNumber = texta + "-" + textb + "-" + textc + "-" + textd;
+
+            document.getElementById("demo").innerHTML = text + "<br>" + dashedNumber;
+        }
+    </script>
+</body>
+
+</html>
