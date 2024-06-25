@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>This is to convert 9837985198 to 9837xxxx98</h2>
+    <p id="demo"></p>
+
+    <button onclick="myFunction()">Click here to convert</button>
+
+
+
+
+
+
+    <script>
+        // This is to convert 9837985198 to 9837xxxx98
+
+        let text = "9837985198";
+        document.getElementById("demo").innerHTML = text;
+
+        function myFunction() {
+            textFirst = text.slice(0, 4);        //9837
+
+            let text2 = text.slice(8, 10);          //98
+            textLast = text2.padStart(6, "x");   //xxxx98
+
+            let text3 = text.slice(10);         // after xx98 value
+
+            let hiddenNumber = textFirst + textLast + text3;
+
+            document.getElementById("demo").innerHTML = text + "<br>" + hiddenNumber;
+        }
+    </script>
+</body>
+
+</html>

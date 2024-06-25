@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Convert text into Uppercase and Lowercase text</h2>
+
+    <p id="demo"></p>
+
+
+    <input type="text" name="firstName" id="firstName" value="" placeholder="First Name">
+    <button onclick="myFunction()">Click here to convert</button>
+
+
+
+
+
+    <script>
+        // This function is used to change uppercase and lowercase and bigger_first_latter
+
+        // let text = "pushkar";
+        // document.getElementById("demo").innerHTML = text;
+        
+        function myFunction() {
+
+            let text = document.getElementById("firstName").value;      // value will be store here
+            document.getElementById("demo").innerHTML = text;           // to show onm screen
+
+
+            let text1 = text.length;
+
+            let uppertext = text.toUpperCase();
+            let lowertext = text.toLowerCase();
+
+            let biggerFirst = lowertext.charAt(0).toUpperCase() + lowertext.slice(1);
+
+            //let text2 = biggerFirst + lowertext.slice(1);
+
+            document.getElementById("demo").innerHTML = text + "<br>Length is : " + text1 + "<br>Uppercase text : " + uppertext + "<br>Lowercase text : " + lowertext + "<br>First Latter should be Uppercase : " + biggerFirst;
+
+        }
+
+
+    </script>
+</body>
+
+</html>
