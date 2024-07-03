@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Length Function</title>
+</head>
+
+<body>
+    <p> Write a program to find length of a string. </p>
+
+    <input type="text" name="string" id="string">
+    <button onclick="myFunction()"> Find Length </button>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+        function myFunction() {
+            const text = document.getElementById("string").value;
+            const length = text.length;
+            document.getElementById("demo").innerHTML = "String filled by you = " + text;
+            document.getElementById("demo1").innerHTML = "Length of a string is = " + length;
+        }
+    </script>
+
+</body>
+
+</html>
