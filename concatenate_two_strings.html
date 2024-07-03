@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Concatenate Two Strings </title>
+</head>
+
+<body>
+    <p>Write a javaScript program to concatenate two strings.</p>
+
+
+    <!-- 1st_string -->
+    <input type="text" name="1st_string" id="string_1" placeholder="Write your First string">
+    
+    <!-- 2nd_string -->
+    <input type="text" name="2nd_string" id="string_2" placeholder="Write your Second string">
+    
+    
+    <button onclick="myFunction()">Click Here to concatenate</button>
+    
+    <p id="first_str"></p>
+    <p id="second_str"></p>
+    <p id="result"></p>
+
+
+    <script>
+        function myFunction() {
+            firstString = document.getElementById("string_1").value;
+            document.getElementById("first_str").innerHTML = "Your first String is = " + firstString;
+
+
+            SecondString = document.getElementById("string_2").value;
+            document.getElementById("second_str").innerHTML = "Your Second String is = " + SecondString;
+
+
+            document.getElementById("result").innerHTML = "Result is = " + firstString + " " + SecondString;
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
