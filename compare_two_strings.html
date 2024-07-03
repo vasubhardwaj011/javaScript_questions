@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Two Strings</title>
+</head>
+
+<body>
+    <p>Write a javaScript program to compare two strings</p>
+
+
+    <!-- 1st dtring -->
+    <input type="text" name="string_1" id="string_1" placeholder="Enter Here First String">
+
+    <!-- 2nd string -->
+    <input type="text" name="string_2" id="string_2" placeholder="Enter Here Second String">
+
+
+    <button onclick="myFunction()"> Click Here To Compare </button>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="result"></p>
+
+
+    <script>
+        function myFunction() {
+            const firstString = document.getElementById("string_1").value;
+            const secondString = document.getElementById("string_2").value;
+
+            document.getElementById("demo").innerHTML = "First String is = " + firstString;
+            document.getElementById("demo1").innerHTML = "Second String is = " + secondString;
+
+            const first_str_upper = firstString.toUpperCase();
+            const second_str_upper = secondString.toUpperCase();
+
+            if (first_str_upper === second_str_upper) {
+                document.getElementById("result").innerHTML = "Result is = <strong>" + firstString + "</strong> and <strong>" + secondString + "</strong> both are same";
+
+            } else {
+                document.getElementById("result").innerHTML = "Result is = <strong>" + firstString + "</strong> and <strong>" + secondString + "</strong> are not same ";
+
+            }
+
+
+        }
+
+
+    </script>
+</body>
+
+</html>
