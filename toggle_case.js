@@ -1,3 +1,5 @@
+// Write a C program to toggle case of each character of a string
+
 let string_a = "vasubhardwaj011@gmail.com";
 
 let text = "";
