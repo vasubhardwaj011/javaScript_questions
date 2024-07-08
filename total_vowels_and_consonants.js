@@ -1,4 +1,4 @@
-// Write a C program to count total number of vowels and consonants in a string.
+// Write a javaScript program to count total number of vowels and consonants in a string.
 
 let a = "aeiouabcdefghij";
 
