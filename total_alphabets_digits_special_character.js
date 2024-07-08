@@ -1,6 +1,6 @@
 // Write a C program to find total number of alphabets, digits or special character in a string.
 
-let a = "demo@123";
+let a = "gsygnsgg65544874!@#$%";
 
 let alphabate = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let number = "0123456789";
