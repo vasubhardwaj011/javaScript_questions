@@ -7,8 +7,11 @@ let str = {
     final_str: "abcdefghijklmnopqrstuvwxyz"
 }
 
+// let str2 = str.str1.split("");            // This line converts the string into new array
+// str.str1 = str.str1.toLowerCase();        // This line convert all char into lowercase char
+
+str.str1 = str.str1.padStart((str.str1.length + 1), str.str1[0]).toLowerCase();        // This line convert all char into lowercase char and will read all index including index [0].
 let str2 = str.str1.split("");            // This line converts the string into new array
-str.str1 = str.str1.toLowerCase();        // This line convert all char into lowercase char
 
 let obj = {
     count: 0,
@@ -31,7 +34,7 @@ for (let i = 0, j = 0; i < str.str1.length; i++) {
 
     }
 }
-// console.log(obj);
+console.log(obj);
 
 for (let i = 0; i < str.final_str.length; i++) {
 
