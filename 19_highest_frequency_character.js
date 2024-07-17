@@ -1,4 +1,4 @@
-// Write a C program to find highest frequency character in a string
+// Write a javaScript program to find highest frequency character in a string
 
 
 let str = {
