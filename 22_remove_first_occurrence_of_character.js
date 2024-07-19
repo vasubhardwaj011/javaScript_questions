@@ -1,4 +1,4 @@
-// Write a javaScript program to remove first occurrence of a character in a given string.
+// Write a javaScript program to remove first occurrence of a character in a given string. 
 
 
 let text = {
