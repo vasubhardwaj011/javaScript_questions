@@ -2,21 +2,16 @@
 
 
 let text = {
-    string: "My Name is Vasuaaa",
+    string: "My Name is Vasuaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
     search: "a",
-    replace_with: "",
-    count: 0
+    replace_with: ""
 }
 
-for (let i = 0; i <= text.string.length; i++) {
+for (let i = 0; i < text.string.length; i++) {
 
     if (text.string[i] == text.search) {
-        text.count++;
-        if (text.count == text.count) {
-            text.last_occurrence_char_index = i;
 
-            text.string = text.string.replace(text.string[i], text.replace_with);
-        }
+        text.string = text.string.replace(text.string[i], text.replace_with);
         i = 0;
 
     }
